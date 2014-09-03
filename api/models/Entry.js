@@ -1,7 +1,7 @@
 /**
 * Entry.js
 *
-* @description :: TODO: You might write a short summary of how this model works and what it represents here.
+* @description :: A simple table to store the reports of license plate to audit.
 * @docs        :: http://sailsjs.org/#!documentation/models
 */
 
@@ -46,6 +46,10 @@ module.exports = {
 
 	  	picture_url:{
 	  		type: "string"
+	  	},
+
+	  	date_reported:{
+	  		type: "date"
 	  	}
 	}
 };

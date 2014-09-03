@@ -1,0 +1,26 @@
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+	<h1> Placas Reportadas </h1>
+	<table class="table table-striped table-bordered table-hover">
+	<thead>
+		<tr>
+			<td><h3>Placa</h3></td>
+			<td><h3>Pago Dei</h3></td>
+			<td><h3>Tasa Municipal</h3></td>
+			<td><h3>Total</h3></td>
+		</tr>
+	<tbody>
+	<% entries.forEach( function( model ){ %>
+		<tr>
+			<td><%= model.license %></td>
+			<td><%= model.dei %></td>
+			<td><%= model.municipal %></td>
+			<td><%= model.municipal+model.dei %></td>
+		</tr>
+	<% }); %>
+	</tbody>
+	</table>
+</div>
+</div>
+</div>

@@ -8,6 +8,13 @@
 module.exports = {
 	new: function (req, res){
 		res.view();
+	},
+
+	index: function(req, res){
+		Entry.find().exec(function(err, entries) {
+			res.view({'entries':entries});
+			return;
+		});
 	}
 };
 
